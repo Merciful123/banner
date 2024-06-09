@@ -1,0 +1,24 @@
+.cardColumn {
+  width: calc(100% / 3);
+}
+
+
+.activeTab {
+  background-color: green !important;
+  color: white;
+}
+
+
+
+@media (max-width: 768px) {
+  .cardColumn {
+    width: calc(100% - 10%);
+  }
+}
+
+
+
+.activeTab .nextui-tab {
+  background-color: green;
+  color: white;
+}

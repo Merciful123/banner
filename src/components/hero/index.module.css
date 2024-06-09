@@ -1,0 +1,9 @@
+.rightSide{
+    background: url("../../assets/salad-image.jpeg") no-repeat left center;
+    background-size: 300px 300px;
+    z-index: 99999999;
+}
+
+.leftHeading, .categoryHeading{
+    font-family: "Sriracha";
+}

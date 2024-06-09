@@ -340,7 +340,7 @@ export default function Navbarmenu() {
     "Dashboard",
     "Activity",
     "Analytics",
-    "System",
+    "Connect with us",
     "Wish List",
     "User",
     "Notification",
@@ -349,11 +349,11 @@ export default function Navbarmenu() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className={`  navbar-main fixed `}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} className={`opacity-[.5] max-sm:opacity-[10] navbar-main fixed `}>
       <div className="flex w-[50%] justify-center items-center left-side">
         <NavbarContent>
           <NavbarItem>
-            <span>GO</span>
+            <span className="text-black">GO</span>
             <span className="font-bold text-inherit"> FOOD</span>
           </NavbarItem>
         </NavbarContent>
@@ -532,7 +532,7 @@ export default function Navbarmenu() {
           className="navbar-child-3 "
         >
           <NavbarItem className=" w-full">
-            <Button as={Link} className="text-white font-light opacity-[.8]" href="#" variant="flat">
+            <Button as={Link} className="text-white font-light opacity-[.8] max-sm:hidden" href="#" variant="flat">
               Connect with us{" "}
               <span>
                 <FaArrowRight size={12} />
