@@ -55,7 +55,7 @@ const FoodTabs = () => {
         onSelectionChange={setSelectedCategory}
         color="success"
         variant="bordered"
-        className="flex justify-center overflow-x-scroll max-sm:flex-col relative max-sm:top-[290px] w-full p-1 mx-auto mt-4 "
+        className="flex justify-center overflow-x-auto max-sm:flex-col relative max-sm:top-[290px] w-full p-1 mx-auto mt-4 "
       >
         {categories.map((category) => (
           <Tab
