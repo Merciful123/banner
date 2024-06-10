@@ -53,25 +53,23 @@ const FoodTabs = () => {
         aria-label="Food Categories"
         selectedKey={selectedCategory}
         onSelectionChange={setSelectedCategory}
-        color="primary"
+        color="success"
         variant="bordered"
-        className="flex justify-center  max-sm:flex-col relative max-sm:top-[280px] w-full mx-auto mt-4"
+        className="flex justify-center overflow-x-scroll max-sm:flex-col relative max-sm:top-[290px] w-full p-1 mx-auto mt-4 "
       >
         {categories.map((category) => (
           <Tab
             key={category.strCategory}
             title={category.strCategory}
-            className={`mt-5 rounded-[32px]    flex ${
-              selectedCategory === category.strCategory
-                ? styles.activeTab
-                : " "
+            className={`mt-0 rounded-[32px]   px-2  flex ${
+              selectedCategory === category.strCategory ? styles.activeTab : " "
             }`}
           >
             <div
-              className={`${styles.cardContainer} mx-auto flex flex-wrap justify-center gap-5 max-sm:mt-[250px]`}
+              className={`${styles.cardContainer} mx-auto flex flex-wrap justify-center gap-5 max-sm:mt-[300px]`}
             >
               {meals.map((meal) => (
-                <Card key={meal.idMeal} className={`${styles.cardColumn}`}>
+                <Card key={meal.idMeal} className={`${styles.cardColumn} p-2 `}>
                   <div
                     className={`${styles.foodCard} flex gap-5 h-[200px] justify-center items-center`}
                   >
@@ -82,10 +80,10 @@ const FoodTabs = () => {
                         className="h-[200px] max-sm:h-[150px] max-sm:w-[150px] w-[200px] object-cover rounded-[50%]"
                       />
                     </CardBody>
-                    <div className="flex items-center flex-col">
-                      <CardHeader>
-                        <p>{meal.strMeal}</p>
-                      </CardHeader>
+                    <div className="flex items-start flex-col gap-2">
+                      {/* <CardHeader> */}
+                      <p>Title: {meal.strMeal}</p>
+                      {/* </CardHeader> */}
                       <p className="text-gray-800">Price: $10</p>
                     </div>
                   </div>
